@@ -35,13 +35,47 @@ body {
   height: 50px;
 }
 
-img {
-  width: 25px;
-  height: 25px;
-}
-
 p {
   text-transform: uppercase;
   color: white;
   font-size: 12px;
+}
+
+.phone {
+  width: 25px;
+  height: 25px;
+  animation-name: seeker;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes seeker {
+  0% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1.5);
+  }
+  25% {
+    transform: rotatez(-10deg);
+  }
+  35% {
+    transform: rotatez(10deg);
+  }
+
+  50% {
+    transform: rotatez(-10deg);
+  }
+
+  65% {
+    transform: rotatez(0);
+  }
+
+  100% {
+    transform: rotatez(0);
+  }
 }
