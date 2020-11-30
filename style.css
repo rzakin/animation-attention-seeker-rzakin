@@ -44,39 +44,43 @@ p {
 .phone {
   width: 25px;
   height: 25px;
-  animation: seeker 0.6s infinite;
+  animation: seeker 3s infinite;
+  
 }
 
 @keyframes seeker {
   0% {
-    transform: scale(0) rotatez(0deg);
-  }
-
-  10% {
     transform: scale(1);
   }
 
-  20% {
+  5% {
     transform: scale(1.5);
   }
-  25% {
-    transform: rotatez(-15deg);
+  7% {
+    transform: rotatez(-10deg);
   }
-  35% {
+  10% {
     transform: rotatez(15deg);
   }
-
-  50% {
+  12% {
     transform: rotatez(-15deg);
   }
-
-  65% {
+  14% {
     transform: rotatez(15deg);
+    16% {
+        transform: rotatez(-15deg);
+      }
+      18% {
+        transform: rotatez(15deg);
   }
 
-  75% {
+  20% {
     transform: rotatez(0);
   }
+
+  /* 55% {
+    transform: rotatez(0);
+  } */
 
   100% {
     transform: rotatez(0);
