@@ -45,7 +45,6 @@ p {
   width: 25px;
   height: 25px;
   animation: seeker 3s infinite;
-  
 }
 
 @keyframes seeker {
@@ -67,11 +66,12 @@ p {
   }
   14% {
     transform: rotatez(15deg);
-    16% {
-        transform: rotatez(-15deg);
-      }
-      18% {
-        transform: rotatez(15deg);
+  }
+  16% {
+    transform: rotatez(-15deg);
+  }
+  18% {
+    transform: rotatez(15deg);
   }
 
   20% {
